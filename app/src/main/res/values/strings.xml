@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My App Sample</string>
+
+    <string name="game_title_1">Ultimate</string>
+    <string name="game_title_2">Rock-Paper-Scissor</string>
+    <string name="start_game">Start Game</string>
+    <string name="select_difficulty">Select Difficulty</string>
+    <string name="normal">Normal</string>
+    <string name="impossible">Impossible</string>
+    <string name="choose">Choose your hand!</string>
+    <string name="you">You</string>
+    <string name="ai">AI</string>
+    <string name="win">You win!</string>
+    <string name="lose">You lose!</string>
+    <string name="draw">Draw!</string>
+    <string name="play_again">Play Again</string>
+    <string name="home">Home</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="scissor">Scissor</string>
+    <string name="back">Back</string>
+</resources>
