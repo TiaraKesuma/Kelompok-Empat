@@ -39,6 +39,6 @@ from [Android Architecture Components Samples](https://github.com/android/archit
 
 This sample is created as part of Mobile Application Development project, Information Technology, Universitas Gadjah Mada, 2022.
 
-Aditya Dwi Cahyo Putra (19/444035/TK/49231)
+**Aditya Dwi Cahyo Putra (19/444035/TK/49231)**
 
-PAPB_2022_04
+ ***PAPB_2022_04*** 
