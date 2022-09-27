@@ -29,10 +29,10 @@
         android:label="fragment_3"
         tools:layout="@layout/fragment_3" >
         <action
-            android:id="@+id/action_fragment_3_to_fragment_2"
-            app:destination="@id/fragment_2" />
-        <action
             android:id="@+id/action_fragment_3_to_fragment_1"
             app:destination="@id/fragment_1" />
+        <action
+            android:id="@+id/action_fragment_3_to_fragment_2"
+            app:destination="@id/fragment_2" />
     </fragment>
 </navigation>

@@ -1,11 +1,10 @@
 package com.example.myapps_navigation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.InputBinding
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.myapps_navigation.databinding.Fragment1Binding
 
