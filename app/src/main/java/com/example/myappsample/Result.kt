@@ -5,10 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.myappsample.MainActivity.GameState
@@ -16,6 +13,13 @@ import com.example.myappsample.MainActivity.GameState
 private const val TAG = "ResultFragment"
 
 class Result : Fragment() {
+    private val resultTextResId = GameState.getResult()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG, "Lifecycle: onCreate")
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,7 +31,7 @@ class Result : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_result, container, false)
 
-        view.findViewById<TextView>(R.id.text).setText(GameState.getResult()) // set the text
+        view.findViewById<TextView>(R.id.text).setText(resultTextResId) // set the text
         view.findViewById<ImageView>(R.id.your_hand).setBackgroundResource(GameState.getHandDrawables(GameState.myHand)) // set player's hand image
         view.findViewById<ImageView>(R.id.ai_hand).setBackgroundResource(GameState.getHandDrawables(GameState.enemyHand)) // set enemy's hand image
 
@@ -53,6 +57,8 @@ class Result : Fragment() {
 
     override fun onResume() {
         Log.d(TAG, "Lifecycle: onResume")
+        Toast.makeText(activity?.applicationContext, getText(resultTextResId), Toast.LENGTH_SHORT).show()
+        Log.d(TAG, "Toast fired")
         super.onResume()
     }
 
@@ -68,6 +74,8 @@ class Result : Fragment() {
 
     override fun onDestroy() {
         Log.d(TAG, "Lifecycle: onDestroy")
+        Toast.makeText(activity?.applicationContext, getText(R.string.game_again_toast), Toast.LENGTH_SHORT).show()
+        Log.d(TAG, "Toast fired")
         super.onDestroy()
     }
 }

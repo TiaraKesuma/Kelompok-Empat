@@ -22,4 +22,5 @@
     <string name="welcome_toast">Welcome</string>
     <string name="game_toast">Let the battle begin</string>
     <string name="game_end_toast">The battle has concluded</string>
+    <string name="game_again_toast">Let\'s play again</string>
 </resources>

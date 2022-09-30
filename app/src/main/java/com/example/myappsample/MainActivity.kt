@@ -87,28 +87,45 @@ class MainActivity : AppCompatActivity() {
             return flag
         }
     }
+    private var oldTime : Long = 0L
+    private var newTime : Long = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "Lifecycle:  OnCreate")
         super.onCreate(savedInstanceState)
+        oldTime = 0L
+        newTime = 0L
         setContentView(R.layout.activity_main)
     }
 
     override fun onStart() {
         Log.d(TAG, "Lifecycle: onStart")
-        Toast.makeText(applicationContext, getText(R.string.welcome_toast), Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "Toast fired")
         super.onStart()
     }
 
     override fun onResume() {
         Log.d(TAG, "Lifecycle: onResume")
+        Log.d(TAG, "OldTime value: $oldTime")
+        if (oldTime != 0L) {
+            newTime = System.nanoTime()
+            Log.d(TAG, "NewTime value: $newTime")
+            val elapsedSeconds = (newTime - oldTime) / 1000000000
+            Log.d(TAG, "Elapsed time onStop: $elapsedSeconds")
+            Toast.makeText(applicationContext, "You have been gone for $elapsedSeconds seconds", Toast.LENGTH_SHORT).show()
+            Log.d(TAG, "TimeToast fired")
+        }
+        else {
+            Toast.makeText(applicationContext, getText(R.string.welcome_toast), Toast.LENGTH_SHORT).show()
+            Log.d(TAG, "WelcomeToast fired")
+        }
         super.onResume()
     }
 
     override fun onPause() {
         Log.d(TAG, "Lifecycle: onPause")
         super.onPause()
+        oldTime = System.nanoTime()
+        Log.d(TAG, "OldTime value: $oldTime")
     }
 
     override fun onStop() {

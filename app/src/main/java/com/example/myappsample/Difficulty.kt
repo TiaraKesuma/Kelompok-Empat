@@ -15,6 +15,11 @@ import com.example.myappsample.MainActivity.GameState
 private const val TAG = "DifficultyFragment"
 
 class Difficulty : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG, "Lifecycle: onCreate")
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

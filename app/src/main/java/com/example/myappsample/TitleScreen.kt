@@ -14,6 +14,11 @@ import androidx.navigation.fragment.findNavController
 private const val TAG = "TitleScreenFragment"
 
 class TitleScreen : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG, "Lifecycle: onCreate")
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
