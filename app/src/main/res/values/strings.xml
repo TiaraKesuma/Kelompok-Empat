@@ -19,4 +19,7 @@
     <string name="paper">Paper</string>
     <string name="scissor">Scissor</string>
     <string name="back">Back</string>
+    <string name="welcome_toast">Welcome</string>
+    <string name="game_toast">Let the battle begin</string>
+    <string name="game_end_toast">The battle has concluded</string>
 </resources>
