@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Fragment_1">
     
     <Button
@@ -12,5 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ke fragment 2" />
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast"/>
 
 </LinearLayout>
