@@ -4,15 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#393E46"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/lists"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="List"
+        android:textAppearance="lists"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="47dp" />
 
+    <LinearLayout
+        android:id="@+id/frame_1"
+        android:layout_width="320dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background=""
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="95dp">
+
+        <View
+            android:id="@+id/img.png"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/img"
+            android:layout_marginLeft="12sp"
+            />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="49dp"
+            android:layout_height="21dp"
+            android:gravity="top"
+            android:text="search"
+            android:textAppearance="search"
+            android:textColor="#C1C1C1"
+            android:textSize="14sp"
+            android:layout_marginLeft="12sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/group_2"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#EEEEEE"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="162dp"
+
+        <TextView
+        android:id="@+id/watching_a_"
+        android:layout_width="153dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="Watching A Movie"
+        android:textAppearance="Watching a Movie"
+        android:textColor="#222831"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+        <View
+        android:id="@+id/group_1"
+        android:layout_width="147dp"
+        android:layout_height="21.74dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#367E18"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="245dp"
+
+    <TextView
+        android:id="@+id/nov_3_00_pm"
+        android:layout_width="108dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="15 Nov, 15:00 PM"
+        android:textAppearance="nov_3_00_pm"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="245dp" />/>/>
+    />
+
+    <RelativeLayout
+        android:id="@+id/akar_icons_"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img_1"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="624dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
