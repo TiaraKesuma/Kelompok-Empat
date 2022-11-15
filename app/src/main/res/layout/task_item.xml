@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_body"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/bgitem"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/maintext"
+        tools:text="Watcing a Movie" />
+    <TextView
+        android:id="@+id/task_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="15 Nov, 3:00 PM"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/kotakhijau"
+        android:backgroundTint="@color/birumain"
+        android:textColor="@color/maintext"
+        android:textAlignment="center"/>
+</LinearLayout>
