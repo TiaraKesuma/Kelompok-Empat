@@ -30,12 +30,11 @@ Here are the screenshots of our prototype.
 
 Adding task to the list
 
-<img src="./public/documentation/assets/Home - Add list.png" height="400" alt="Add Task View"/>
-<img src="./public/documentation/assets/Popup added.png" height="400" alt="Add Task Success"/>
+<img src="./public/documentation/assets/Home - Add list.png" height="400" alt="Add Task View"/> <img src="./public/documentation/assets/Popup added.png" height="400" alt="Add Task Success"/>
 
 Opening up task detail and delete it from the list
-<img src="./public/documentation/assets/Home - Detail list.png" height="400" alt="Detail Task View"/>
-<img src="./public/documentation/assets/Popup deleted.png" height="400" alt="Add Task View"/>
+
+<img src="./public/documentation/assets/Home - Detail list.png" height="400" alt="Detail Task View"/> <img src="./public/documentation/assets/Popup deleted.png" height="400" alt="Add Task View"/>
 
 This project will aim to showcases the features of Android such as:
 
