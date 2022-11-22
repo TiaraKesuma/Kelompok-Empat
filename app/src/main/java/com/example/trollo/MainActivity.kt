@@ -20,16 +20,16 @@ class MainActivity : AppCompatActivity() {
     private var viewManager = LinearLayoutManager(this)
     private lateinit var viewModel : TaskListViewModel
     private lateinit var mainrecycler : RecyclerView
-    private lateinit var but: Button
+    private lateinit var button: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-//        mainrecycler = findViewById(R.id.recycler)
+        setContentView(R.layout.task_list)
+        mainrecycler = findViewById(R.id.recycler)
         val application = requireNotNull(this).application
         val factory = TaskListViewModelFactory()
-        viewModel = ViewModelProvider(this).get(TaskListViewModel::class.java)
-//        but = findViewById(R.id.tambahlist)
-        but.setOnClickListener {
+        viewModel = ViewModelProvider(this, factory).get(TaskListViewModel::class.java)
+        button = findViewById(R.id.tambahlist)
+        button.setOnClickListener {
             addData()
         }
 
