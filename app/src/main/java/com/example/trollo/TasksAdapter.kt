@@ -4,15 +4,20 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trollo.model.Task
 import com.example.trollo.viewModel.TaskListViewModel
+import java.nio.file.Files.delete
 
 class TasksAdapter(
     val viewModel: TaskListViewModel,
     val arrayList: ArrayList<Task>,
     val context: Context
+
     ) : RecyclerView.Adapter<TasksAdapter.TasksViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -37,8 +42,12 @@ class TasksAdapter(
 
     inner class TasksViewHolder(private val binding: View) : RecyclerView.ViewHolder(binding) {
         fun bind(task: Task) {
-            binding.task_title.text = task.title
-            binding.task_due_date.text = task.due_date
+            binding.findViewById<TextView>(R.id.title).text = task.title
+            binding.findViewById<ImageButton>(R.id.delete_button).setOnClickListener {
+                viewModel.deleteTask(task)
+                notifyItemRemoved(arrayList.indexOf(task))
+            }
+
         }
     }
 }
