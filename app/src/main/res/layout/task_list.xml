@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:background="@color/mainbackground"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/tasklist">
 
     <LinearLayout
         android:layout_width="match_parent"

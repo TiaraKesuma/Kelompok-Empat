@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -24,11 +25,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        mainrecycler = findViewById(R.id.recycler)
+        mainrecycler = findViewById(R.id.recycler)
         val application = requireNotNull(this).application
         val factory = TaskListViewModelFactory()
+        val recyc = findViewById<LinearLayout>(R.layout.task_list)
         viewModel = ViewModelProvider(this).get(TaskListViewModel::class.java)
-//        but = findViewById(R.id.tambahlist)
+        but = findViewById(R.id.tambahlist)
         but.setOnClickListener {
             addData()
         }
