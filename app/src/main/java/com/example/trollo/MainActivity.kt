@@ -21,9 +21,10 @@ class MainActivity : AppCompatActivity() {
     private var viewManager = LinearLayoutManager(this)
     private lateinit var viewModel : TaskListViewModel
     private lateinit var mainrecycler : RecyclerView
-    private lateinit var but: Button
+    private lateinit var button: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         setContentView(R.layout.activity_main)
         mainrecycler = findViewById(R.id.recycler)
         val application = requireNotNull(this).application
@@ -32,6 +33,15 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this).get(TaskListViewModel::class.java)
         but = findViewById(R.id.tambahlist)
         but.setOnClickListener {
+=======
+        setContentView(R.layout.task_list)
+        mainrecycler = findViewById(R.id.recycler)
+        val application = requireNotNull(this).application
+        val factory = TaskListViewModelFactory()
+        viewModel = ViewModelProvider(this, factory).get(TaskListViewModel::class.java)
+        button = findViewById(R.id.tambahlist)
+        button.setOnClickListener {
+>>>>>>> 4f1f32218b779c5b728b71fdc6856f7387f761f5
             addData()
         }
 
