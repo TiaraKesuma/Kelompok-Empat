@@ -7,7 +7,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:id="@+id/rv_todo_list"
+        android:id="@+id/rv_task_list"
         tools:listitem="@layout/task_item"
         android:layout_height="match_parent">
     </androidx.recyclerview.widget.RecyclerView>
