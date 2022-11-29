@@ -1,7 +1,8 @@
-package com.example.trollo
+package com.example.trollo.ui.addTask
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.trollo.R
 
 class AddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
