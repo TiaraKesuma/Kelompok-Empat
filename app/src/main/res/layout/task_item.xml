@@ -1,35 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/task_body"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="110dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bgitem"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="10dp" >
 
-    <TextView
-        android:id="@+id/task_title"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/maintext"
-        tools:text="Watcing a Movie" />
-    <TextView
-        android:id="@+id/task_due_date"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/idv_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="15 Nov, 3:00 PM"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/kotakhijau"
-        android:backgroundTint="@color/birumain"
-        android:textColor="@color/maintext"
-        android:textAlignment="center"/>
-</LinearLayout>
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/idv_delete"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            tools:hint="Watching a Movie" />
+
+        <TextView
+            android:id="@+id/idv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="2"
+            android:textColor="@color/maintext"
+            android:textSize="12sp"
+            tools:hint="Movie number 1" />
+
+        <TextView
+            android:id="@+id/idv_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/kotakhijau"
+            android:textAlignment="center"
+            android:textColor="@color/maintext"
+            tools:hint="15 Nov, 3:00 PM" />
+    </LinearLayout>
+
+</RelativeLayout>

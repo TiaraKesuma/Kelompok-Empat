@@ -1,21 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/mainbackground"
+    tools:context=".ui.mainView.MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/my_nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/navigation"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_title"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingStart="50dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/bgsearch"
+                    android:hint="@string/search" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <include layout="@layout/task_list_content" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/birumain"
+            android:insetBottom="0dp"
+            android:insetTop="0dp"
+            app:cornerRadius="25dp"
+            android:text="@string/plus"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="290dp" />
+    </LinearLayout>
+</LinearLayout>
