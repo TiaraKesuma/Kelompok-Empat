@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.trollo.R
 import com.example.trollo.data.db.Task
 import com.example.trollo.utils.Const
@@ -78,6 +79,12 @@ class AddActivity : AppCompatActivity() {
             errorMessages.add(getString(R.string.due_date_error_2))
         }
         Log.d(tag, "Finish validating. ErrorMessages size: ${errorMessages.size}")
+        if (errorMessages.size > 0) {
+            for(error in errorMessages) {
+                val toast = Toast.makeText(applicationContext, error, Toast.LENGTH_LONG)
+                toast.show()
+            }
+        }
         return errorMessages.size <= 0
     }
 

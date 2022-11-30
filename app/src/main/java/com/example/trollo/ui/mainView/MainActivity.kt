@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,6 +46,11 @@ class MainActivity : AppCompatActivity(), MainAdapter.TaskEvents {
      */
     override fun onDeleteClicked(task: Task) {
         mainViewModel.deleteTask(task)
+        val text = "Task berhasil dihapus"
+        val duration = Toast.LENGTH_LONG
+
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
     }
 
     override fun onUpdateClicked(task: Task) {
@@ -63,9 +69,19 @@ class MainActivity : AppCompatActivity(), MainAdapter.TaskEvents {
             when (requestCode) {
                 Const.INTENT_ADD -> {
                     mainViewModel.saveTask(task)
+                    val text = "Task berhasil disimpan"
+                    val duration = Toast.LENGTH_LONG
+
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
                 }
                 Const.INTENT_UPDATE -> {
                     mainViewModel.updateTask(task)
+                    val text = "Task berhasil diupdate"
+                    val duration = Toast.LENGTH_LONG
+
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
                 }
             }
         }
