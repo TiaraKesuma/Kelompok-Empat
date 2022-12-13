@@ -33,23 +33,23 @@
                     android:textColor="@color/white"/>
             </LinearLayout>
         </FrameLayout>
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:paddingStart="50dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:background="@drawable/bgsearch"
-                    android:hint="@string/search" />
-            </LinearLayout>
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:paddingStart="50dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textColorHint="@color/white"-->
+<!--                    android:background="@drawable/bgsearch"-->
+<!--                    android:hint="@string/search" />-->
+<!--            </LinearLayout>-->
 
-        </FrameLayout>
+<!--        </FrameLayout>-->
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -17,4 +17,7 @@
     <string name="description_error">Please enter description</string>
     <string name="due_date_error_1">Please enter due date</string>
     <string name="due_date_error_2">Please use date format: DD/MM/YYYY</string>
+
+    <string name="notification_title">New Task Added!</string>
+    <string name="notification_content">Looking lively! Don\'t forget to check on your other tasks!</string>
 </resources>
