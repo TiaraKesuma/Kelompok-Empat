@@ -49,34 +49,6 @@ class MainAdapter(taskEvents: TaskEvents): RecyclerView.Adapter<MainAdapter.View
     override fun getFilter(): Filter {
         TODO("Not yet implemented")
     }
-//    override fun getFilter(): Filter {
-//        return object: Filter() {
-//            override fun performFiltering(p0: CharSequence?): FilterResults {
-//                val charString = p0.toString()
-//                filteredTaskList = if (charString.isEmpty()) {
-//                    taskList
-//                } else {
-//                    val filteredList = arrayListOf<Task>()
-//                    for (row in taskList) {
-//                        if (row.title.lowercase().contains(charString.lowercase())
-//                            || row.description.contains(charString.lowercase())) {
-//                            filteredList.add(row)
-//                        }
-//                    }
-//                    filteredList
-//                }
-//
-//                val filterResults = FilterResults()
-//                filterResults.values = filteredTaskList
-//                return filterResults
-//            }
-//
-//            override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
-//                filteredTaskList = p1?.values as List<Task>
-//                notifyDataSetChanged()
-//            }
-//        }
-//    }
 
     /**
      * Method used for list updates on Main Activity

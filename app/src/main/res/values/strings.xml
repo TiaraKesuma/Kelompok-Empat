@@ -20,4 +20,7 @@
 
     <string name="notification_title">New Task Added!</string>
     <string name="notification_content">Looking lively! Don\'t forget to check on your other tasks!</string>
+
+    <string name="task_inputted">Task has been successfully inputted</string>
+    <string name="task_deleted">Task has been removed</string>
 </resources>
