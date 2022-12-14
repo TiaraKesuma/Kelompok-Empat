@@ -43,6 +43,9 @@ class MainAdapter(taskEvents: TaskEvents): RecyclerView.Adapter<MainAdapter.View
         }
     }
 
+    /**
+     * Search Filter implementation
+     */
     override fun getFilter(): Filter {
         TODO("Not yet implemented")
     }
