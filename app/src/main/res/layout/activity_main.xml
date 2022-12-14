@@ -26,13 +26,26 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/main_title"
                     android:fontFamily="@font/poppins_bold"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/info_button"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/white"
+                    android:insetBottom="0dp"
+                    android:insetTop="0dp"
+                    app:cornerRadius="25dp"
+                    android:text="@string/info"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="170dp" />
             </LinearLayout>
         </FrameLayout>
 <!--        <FrameLayout-->
