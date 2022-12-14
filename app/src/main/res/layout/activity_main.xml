@@ -45,7 +45,7 @@
                     android:text="@string/info"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:layout_marginStart="170dp" />
+                    android:layout_marginStart="160dp" />
             </LinearLayout>
         </FrameLayout>
 <!--        <FrameLayout-->
@@ -84,7 +84,7 @@
             android:text="@string/plus"
             android:textSize="30sp"
             android:layout_marginTop="40dp"
-            android:layout_marginStart="290dp" />
+            android:layout_marginStart="280dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
