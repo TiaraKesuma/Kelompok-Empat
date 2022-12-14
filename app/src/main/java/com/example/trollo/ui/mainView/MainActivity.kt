@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trollo.R
 import com.example.trollo.data.db.Task
 import com.example.trollo.ui.addTask.AddActivity
+import com.example.trollo.ui.infoCenter.InfoActivity
 import com.example.trollo.utils.Const
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.task_list_content.*
@@ -40,6 +41,12 @@ class MainActivity : AppCompatActivity(), MainAdapter.TaskEvents {
         mainViewModel.getAllTaskList().observe(this, Observer {
             mainAdapter.setAllTaskItems(it)
         })
+
+        // setup InfoCenter click listener
+        info_button.setOnClickListener {
+            val intent = Intent(this@MainActivity, InfoActivity::class.java)
+            startActivity(intent)
+        }
 
         // setup Tambahlist click listener
         add_button.setOnClickListener {
