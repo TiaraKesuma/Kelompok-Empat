@@ -74,14 +74,4 @@
             android:layout_marginStart="290dp" />
 
     </LinearLayout>
-
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        android:id="@+id/fragmentContainerView"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        android:name="com.example.trollo.ui.mainView.NotifierFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        tools:layout="@layout/fragment_notifier" />-->
-
 </androidx.constraintlayout.widget.ConstraintLayout>

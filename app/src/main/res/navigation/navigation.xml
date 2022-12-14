@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_main_to_add"
             app:destination="@id/addActivity" />
-        <action
-            android:id="@+id/action_main_to_notifier"
-            app:destination="@id/notifierFragment" />
     </activity>
     <activity
         android:id="@+id/addActivity"
@@ -26,13 +23,5 @@
             android:id="@+id/action_add_to_main"
             app:destination="@id/mainActivity" />
     </activity>
-    <fragment
-        android:id="@+id/notifierFragment"
-        android:name="com.example.trollo.ui.mainView.NotifierFragment"
-        android:label="fragment_notifier"
-        tools:layout="@layout/fragment_notifier" >
-        <action
-            android:id="@+id/action_notifier_to_main"
-            app:destination="@id/mainActivity" />
-    </fragment>
+
 </navigation>
