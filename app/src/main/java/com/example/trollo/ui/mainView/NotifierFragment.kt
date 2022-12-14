@@ -19,7 +19,7 @@ import com.example.trollo.databinding.FragmentNotifierBinding
 
 class NotifierFragment : Fragment() {
     /**
-     * TODO:
+     * TODO: implement Fragment so that it will come into view when called and can be toggled on/off by clicking anywhere
      */
     private val hideHandler = Handler(Looper.myLooper()!!)
 
